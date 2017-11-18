@@ -2,7 +2,7 @@ package equipment.weapon;
 
 import equipment.Equipment;
 
-public abstract class AbstractWeapon extends Equipment {
+public abstract class Weapon extends Equipment {
     private double damage = 0;
 
     public double getDamage() {

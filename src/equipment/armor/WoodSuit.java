@@ -1,11 +1,8 @@
 package equipment.armor;
 
-import equipment.armor.AbstractArmor;
-
-public class WoodSuit extends AbstractArmor {
+public class WoodSuit extends ChestArmor {
     @Override
     public String getType() {
-        // TODO Auto-generated method stub
         return "wood suit";
     }
 }
