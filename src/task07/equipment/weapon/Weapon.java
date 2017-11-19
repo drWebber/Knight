@@ -1,6 +1,6 @@
-package equipment.weapon;
+package task07.equipment.weapon;
 
-import equipment.Equipment;
+import task07.equipment.Equipment;
 
 public abstract class Weapon extends Equipment {
     private double damage = 0;

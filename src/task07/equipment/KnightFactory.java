@@ -1,7 +1,7 @@
-package equipment;
+package task07.equipment;
 
-import equipment.armor.*;
-import equipment.weapon.Weapon;
+import task07.equipment.armor.*;
+import task07.equipment.weapon.Weapon;
 
 public interface KnightFactory {
     HeadArmor getHeadArmor();

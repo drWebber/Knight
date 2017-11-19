@@ -1,6 +1,6 @@
-package logic;
+package task07.logic;
 
-import equipment.Equipment;
+import task07.equipment.Equipment;
 
 public interface Filter {
     boolean isSatisty(Equipment eq);

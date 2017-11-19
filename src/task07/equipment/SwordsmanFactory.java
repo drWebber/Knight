@@ -1,10 +1,9 @@
-package equipment;
+package task07.equipment;
 
-import equipment.armor.*;
-import equipment.weapon.*;
+import task07.equipment.armor.*;
+import task07.equipment.weapon.*;
 
 public class SwordsmanFactory implements KnightFactory {
-
     @Override
     public HeadArmor getHeadArmor() {
         return new MetalHelmet();
@@ -19,5 +18,4 @@ public class SwordsmanFactory implements KnightFactory {
     public Weapon getWeapon() {
         return new Sword();
     }
-
 }

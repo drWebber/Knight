@@ -1,4 +1,4 @@
-package equipment.armor;
+package task07.equipment.armor;
 
 public class WoodSuit extends ChestArmor {
     @Override

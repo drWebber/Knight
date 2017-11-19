@@ -1,4 +1,4 @@
-package equipment;
+package task07.equipment;
 
 public abstract class Equipment {
     private double cost;
@@ -8,7 +8,7 @@ public abstract class Equipment {
         return cost;
     }
 
-    public void setCost(double cost) {
+    public void setCost(final double cost) {
         this.cost = cost;
     }
 
@@ -16,7 +16,7 @@ public abstract class Equipment {
         return weight;
     }
 
-    public void setWeight(double weight) {
+    public void setWeight(final double weight) {
         this.weight = weight;
     }
 
