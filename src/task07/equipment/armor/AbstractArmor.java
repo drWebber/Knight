@@ -9,7 +9,7 @@ public abstract class AbstractArmor extends Equipment {
         return armor;
     }
 
-    public void setArmor(double armor) {
+    public final void setArmor(final double armor) {
         this.armor = armor;
     }
 }

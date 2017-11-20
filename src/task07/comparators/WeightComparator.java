@@ -5,7 +5,7 @@ import task07.equipment.Equipment;
 
 public class WeightComparator implements Comparator<Equipment> {
     @Override
-    public int compare(Equipment e1, Equipment e2) {
+    public final int compare(final Equipment e1, final Equipment e2) {
         return Double.compare(e1.getWeight(), e2.getWeight());
     }
 }

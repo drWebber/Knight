@@ -2,7 +2,7 @@ package task07.equipment.armor;
 
 public class LeathreHelmet extends HeadArmor {
     @Override
-    public String getType() {
+    public final String getType() {
         return "leather helmet";
     }
 }

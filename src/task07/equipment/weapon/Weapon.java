@@ -9,7 +9,7 @@ public abstract class Weapon extends Equipment {
         return damage;
     }
 
-    public void setDamage(double damage) {
+    public final void setDamage(final double damage) {
         this.damage = damage;
     }
 }

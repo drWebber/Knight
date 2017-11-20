@@ -13,8 +13,8 @@ public class Knight {
     private List<Equipment> equipment;
 
     public Knight() {};
-    
-    public Knight(KnightFactory kf) {        
+
+    public Knight(final EquipmentFactory kf) {
         List<Equipment> equipment = new ArrayList<Equipment>();
 
         ThreadLocalRandom random = ThreadLocalRandom.current();
@@ -37,7 +37,7 @@ public class Knight {
         setEquipment(equipment);
     }
 
-    public List<Equipment> getEquipment() {
+    final public List<Equipment> getEquipment() {
         return equipment;
     }
 
@@ -45,24 +45,24 @@ public class Knight {
         this.equipment = equipment;
     }
 
-    public List<Equipment> find(Filter filter) {
-        List<Equipment> result = new ArrayList<Equipment>();   
-        
+    public final List<Equipment> find(final Filter filter) {
+        List<Equipment> result = new ArrayList<Equipment>();
+
         for (Equipment item : equipment) {
             if (filter.isSatisty(item)) {
-                result.add(item);		
+                result.add(item);
             }
         }
         return result;
     }
 
-    public void sort(Comparator<Equipment> comparator) {
+    public final void sort(final Comparator<Equipment> comparator) {
         equipment.sort(comparator);
     }
 
-    public double getEquipmentsCost() {
+    public final double getEquipmentsCost() {
         double sum = 0;
-        
+
         for (Equipment item : equipment) {
             sum += item.getCost();
         }

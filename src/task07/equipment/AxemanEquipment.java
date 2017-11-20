@@ -3,19 +3,19 @@ package task07.equipment;
 import task07.equipment.armor.*;
 import task07.equipment.weapon.*;
 
-public class AxemanFactory implements KnightFactory {
+public class AxemanEquipment implements EquipmentFactory {
     @Override
-    public HeadArmor getHeadArmor() {
+    public final HeadArmor getHeadArmor() {
         return new LeathreHelmet();
     }
 
     @Override
-    public ChestArmor getChestArmor() {
+    public final ChestArmor getChestArmor() {
         return new WoodSuit();
     }
 
     @Override
-    public Weapon getWeapon() {
+    public final Weapon getWeapon() {
         return new Axe();
     }
 }
