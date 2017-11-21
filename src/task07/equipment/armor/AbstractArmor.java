@@ -3,7 +3,7 @@ package task07.equipment.armor;
 import task07.equipment.*;
 
 /**
- * An abstract class of all knight related armor
+ * An abstract class of all knight related armor.
  * @see task07.equipment.Equipment
  */
 public abstract class AbstractArmor extends Equipment {

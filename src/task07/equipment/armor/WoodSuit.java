@@ -1,7 +1,7 @@
 package task07.equipment.armor;
 
 /**
- * Provides a wood suit context
+ * Provides a wood suit context.
  * @see task07.equipment.armor.AbstractArmor
  */
 public class WoodSuit extends AbstractArmor {

@@ -10,7 +10,7 @@ import task07.equipment.weapon.*;
 import task07.logic.*;
 
 /**
- * A class which provides a knight's context
+ * A class which provides a knight's context.
  */
 public class Knight {
     private List<Equipment> equipment;

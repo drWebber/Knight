@@ -4,8 +4,8 @@ import java.util.Comparator;
 import task07.equipment.Equipment;
 
 /**
- * Provides a comparison function, which imposes a 
- * total ordering on collection of equipment objects
+ * Provides a comparison function, which imposes a
+ * total ordering on collection of equipment objects.
  * @see task07.equipment.Equipment
  */
 public class WeightComparator implements Comparator<Equipment> {

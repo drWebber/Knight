@@ -7,10 +7,12 @@ import task07.comparators.WeightComparator;
 import task07.logic.CostFilter;
 
 /**
- * The main class of the application
+ * The main class of the application.
  */
 public class Main {
+    /** The minimum price of knight's equipment. */
     private static final double MIN_COST = 70.0;
+    /** The maximum price of knight's equipment. */
     private static final double MAX_COST = 200.0;
 
     public static void main(String[] args) {
@@ -33,15 +35,21 @@ public class Main {
 
         System.out.println("------------------------");
         System.out.print("Equipment that meets the selection criteria: ");
-        List<Equipment> satyisfied = knight.find(new CostFilter(MIN_COST,
+        List<Equipment> satisfied = knight.find(new CostFilter(MIN_COST,
                 MAX_COST));
         String items = "";
-        for (Equipment item : satyisfied) {
+        for (Equipment item : satisfied) {
             items += item.getType() + ", ";
         }
         System.out.println(items.substring(0, items.length() - 2));
     }
 
+    /**
+     * Provides the equipments factory by name.
+     * @param name EquipmentFactory name
+     * @return EquipmentFactory
+     * @throws RuntimeException unsupported knight factory
+     * @see EquipmentFactory */
     private static EquipmentFactory getFactoryByName(final String name) {
         switch (name) {
         case "swordsman":

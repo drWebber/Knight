@@ -4,7 +4,7 @@ import task07.equipment.armor.*;
 import task07.equipment.weapon.*;
 
 /**
- * A concrete factory to make families of swordsman equipment
+ * A concrete factory to make families of swordsman equipment.
  * @see task07.equipment.EquipmentFactory
  */
 public class SwordsmanEquipment implements EquipmentFactory {

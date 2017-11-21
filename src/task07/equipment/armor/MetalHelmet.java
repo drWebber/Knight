@@ -1,7 +1,7 @@
 package task07.equipment.armor;
 
 /**
- * Provides a metal helmet context
+ * Provides a metal helmet context.
  * @see task07.equipment.armor.AbstractArmor
  */
 public class MetalHelmet extends AbstractArmor {

@@ -4,13 +4,13 @@ import task07.equipment.armor.*;
 import task07.equipment.weapon.*;
 
 /**
- * A concrete factory to make families of axeman equipment
+ * A concrete factory to make families of axeman equipment.
  * @see task07.equipment.EquipmentFactory
  */
 public class AxemanEquipment implements EquipmentFactory {
     @Override
     public final AbstractArmor getHeadArmor() {
-        return new LeathreHelmet();
+        return new LeatherHelmet();
     }
 
     @Override
