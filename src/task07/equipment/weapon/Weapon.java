@@ -2,8 +2,12 @@ package task07.equipment.weapon;
 
 import task07.equipment.Equipment;
 
+/**
+ * An abstract class of all knight related weapon
+ * @see task07.equipment.Equipment
+ */
 public abstract class Weapon extends Equipment {
-    private double damage = 0;
+    private double damage;
 
     public double getDamage() {
         return damage;

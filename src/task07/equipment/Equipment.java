@@ -1,5 +1,8 @@
 package task07.equipment;
 
+/**
+ * An abstract class of all knight related equipment
+ */
 public abstract class Equipment {
     private double cost;
     private double weight;

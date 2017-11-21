@@ -2,6 +2,9 @@ package task07.logic;
 
 import task07.equipment.Equipment;
 
+/**
+ * Used to decide which equipment corresponds to a price range
+ */
 public class CostFilter implements Filter {
     private final double minCost;
     private final double maxCost;

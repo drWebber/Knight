@@ -1,6 +1,10 @@
 package task07.equipment.armor;
 
-public class LeathreHelmet extends HeadArmor {
+/**
+ * Provides a leather helmet context
+ * @see task07.equipment.armor.AbstractArmor
+ */
+public class LeathreHelmet extends AbstractArmor {
     @Override
     public final String getType() {
         return "leather helmet";

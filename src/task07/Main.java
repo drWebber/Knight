@@ -6,6 +6,9 @@ import task07.equipment.*;
 import task07.comparators.WeightComparator;
 import task07.logic.CostFilter;
 
+/**
+ * The main class of the application
+ */
 public class Main {
     private static final double MIN_COST = 70.0;
     private static final double MAX_COST = 200.0;

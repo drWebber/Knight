@@ -9,6 +9,9 @@ import task07.equipment.armor.*;
 import task07.equipment.weapon.*;
 import task07.logic.*;
 
+/**
+ * A class which provides a knight's context
+ */
 public class Knight {
     private List<Equipment> equipment;
 
@@ -19,11 +22,11 @@ public class Knight {
 
         ThreadLocalRandom random = ThreadLocalRandom.current();
 
-        HeadArmor helmet = kf.getHeadArmor();
+        AbstractArmor helmet = kf.getHeadArmor();
         helmet.setCost(random.nextDouble(10.0, 100.0));
         helmet.setWeight(random.nextDouble(3.0, 10.0));
 
-        ChestArmor chestArmor = kf.getChestArmor();
+        AbstractArmor chestArmor = kf.getChestArmor();
         chestArmor.setCost(random.nextDouble(100.0, 300.0));
         chestArmor.setWeight(random.nextDouble(10.0, 30.0));
 
